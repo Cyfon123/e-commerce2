@@ -47,7 +47,7 @@ export const RegisterForm = () => {
     <div>
         <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={6}>
                     <TextField 
                     required
                     id='firstName'
@@ -56,7 +56,7 @@ export const RegisterForm = () => {
                     fullWidth
                     autoComplete='given-name'/>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={6}>
                     <TextField 
                     required
                     id='lastName'
@@ -81,7 +81,7 @@ export const RegisterForm = () => {
                     name='password'
                     label='Password'
                     fullWidth
-                    autoComplete='password'/>
+                    type='password'/>
                 </Grid>
                 <Grid item xs={12}>
                     <Button
@@ -95,8 +95,8 @@ export const RegisterForm = () => {
         </form>
 
         <div className='py-3 flex items-center justify-center'> 
-            <p>if you have already account ?</p>
-            <Button className='ml-5' onClick={()=>navigate("/login")}>Login</Button>
+            <p className="text-sm sm:text-base md:text-lg">if you have already account?</p>
+            <Button className='ml-5 text-sm sm:text-base md:text-lg' onClick={()=>navigate("/login")}>Login</Button>
         </div>
     </div>
   )

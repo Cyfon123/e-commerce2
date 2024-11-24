@@ -8,13 +8,13 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const HomeSectionCarousel = ({data,sectionName}) => {
     const carouselRef = useRef(null); // Create a ref for the carousel
     const responsive = {
-        0: { items: 1 },
-        540: { items: 2 },
+        0: { items: 2 },
+        540: { items: 3 },
         720: { items: 3 },
         1024: { items: 4 },
     };      
 
-    const items = data.map((item, index) => <HomeSectionCard product={item} key={index} />);
+    const items = data.map((item, index) => <HomeSectionCard product={item} sectionName={sectionName} key={index} />);
 
     const handlePrev = () => {
         carouselRef.current.slidePrev(); // Slide to the previous item
@@ -34,7 +34,7 @@ const HomeSectionCarousel = ({data,sectionName}) => {
                     disableButtonsControls
                     infinite
                     responsive={responsive}
-                    disableDotsControls
+                    disableDotsControls  
                 />
             </div>
             <button

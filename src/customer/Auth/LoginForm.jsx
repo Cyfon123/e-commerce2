@@ -61,7 +61,7 @@ const LoginForm = () => {
                     name='password'
                     label='password'
                     fullWidth
-                    autoComplete='password'/>
+                    type='password'/>
                 </Grid>
                 <Grid item xs={12}>
                     <Button

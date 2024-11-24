@@ -10,7 +10,7 @@ const Footer = () => {
         className='bg-black text-white text-center mt-10'
         sx={{ bgcolor: "black", color: "white", py: 3 }}
       >
-         <Grid item xs={12} sm={6} md={3}>
+         <Grid item xs={6} sm={6} md={3}>
           <Typography className='pb-5' variant='h6'>Company</Typography>
           <div>
             <Button className='pb-5 text-white' variant='text'>About</Button>
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid item xs={6} sm={6} md={3}>
           <Typography className='pb-5' variant='h6'>Solutions</Typography>
           <div>
             <Button className='pb-5' variant='text'>Analytics</Button>
@@ -44,8 +44,8 @@ const Footer = () => {
 
        
 
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography className='pb-5' variant='h6'>Documentaion</Typography>
+        <Grid item xs={6} sm={6} md={3} sx={{ mt: { xs: 2, sm: 0 } }}>
+          <Typography className='pb-5 ' variant='h6'>About</Typography>
           <div>
             <Button className='pb-5' variant='text'>Guides</Button>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid item xs={6} sm={6} md={3}sx={{ mt: { xs: 2, sm: 0 }}} >
           <Typography className='pb-5' variant='h6'>Documentation</Typography>
           <div>
             <Button className='pb-5' variant='text'>Api Guides</Button>
