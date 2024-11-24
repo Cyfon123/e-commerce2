@@ -9,6 +9,10 @@ const HomeSectionCard = ({product,sectionName}) => {
         if (sectionName === "Men's Kurta") {
             navigate(`/men/clothing/mens_kurta`); 
         }
+        else if(sectionName === "Saree")
+        {
+          navigate(`/women/clothing/saree`);
+        }
 
 
 
@@ -19,7 +23,7 @@ const HomeSectionCard = ({product,sectionName}) => {
     onClick={handleItemClick}>
 
        <div className='h-[13rem] w-[10rem]'>
-        <img className='object-cover object-top w-full h-full' src={product.image} alt="" /> 
+        <img className='object-cover object-top w-full h-full' src={product.imageUrl} alt="" /> 
        </div>
 
        <div className='p-4'>

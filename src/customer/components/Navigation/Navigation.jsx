@@ -42,7 +42,7 @@ const navigation = {
           name: "Clothing",
           items: [
             { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
+            { name: "Saree", href: "#" },
             { name: "Pants", href: "#" },
             { name: "Denim", href: "#" },
             { name: "Sweaters", href: "#" },
